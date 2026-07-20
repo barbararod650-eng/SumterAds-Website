@@ -396,44 +396,48 @@
 
             <!-- Contact Form -->
 
-            <div class="bg-slate-900 p-8 rounded-xl">
+            <div id="contact-form-wrapper">
 
-                <form>
+    <form id="contact-form" action="https://formspree.io/f/xdaqzjnr" method="POST">
 
-                    <input
-                        type="text"
-                        placeholder="Your Name"
-                        class="w-full p-4 mb-4 rounded-lg bg-slate-800">
+        <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            class="w-full p-4 mb-4 rounded-lg bg-slate-800">
 
-                    <input
-                        type="email"
-                        placeholder="Your Email"
-                        class="w-full p-4 mb-4 rounded-lg bg-slate-800">
+        <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            class="w-full p-4 mb-4 rounded-lg bg-slate-800">
 
-                    <input
-                        type="text"
-                        placeholder="Subject"
-                        class="w-full p-4 mb-4 rounded-lg bg-slate-800">
+        <input
+            type="text"
+            name="subject"
+            placeholder="Subject"
+            class="w-full p-4 mb-4 rounded-lg bg-slate-800">
 
-                    <textarea
-                        rows="5"
-                        placeholder="Tell us about your project..."
-                        class="w-full p-4 mb-6 rounded-lg bg-slate-800"></textarea>
+        <textarea
+            rows="5"
+            name="message"
+            placeholder="Tell us about your project..."
+            required
+            class="w-full p-4 mb-6 rounded-lg bg-slate-800"></textarea>
 
-                    <button
-                        class="bg-orange-500 hover:bg-orange-600 px-8 py-4 rounded-xl font-semibold transition">
+        <button
+            type="submit"
+            class="bg-orange-500 hover:bg-orange-600 px-8 py-4 rounded-xl font-semibold transition duration-300 hover:shadow-lg hover:shadow-orange-500/50">
 
-                        Send Message
+            Send Message
 
-                    </button>
+        </button>
 
-                </form>
+    </form>
 
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
 <!-- Footer -->
